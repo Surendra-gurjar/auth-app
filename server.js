@@ -8,6 +8,9 @@ const app = express();
 
 
 app.use(express.json());
+app.get('/', (req, res) => {
+    res.send('Welcome to the RBAC Application!');
+  });
 
 app.use("/auth", authRoutes);
 app.use("/users", userRoutes);
