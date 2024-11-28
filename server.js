@@ -6,10 +6,9 @@ const userRoutes = require("./routes/users");
 
 const app = express();
 
-// Middleware
+
 app.use(express.json());
 
-// Routes
 app.use("/auth", authRoutes);
 app.use("/users", userRoutes);
 
